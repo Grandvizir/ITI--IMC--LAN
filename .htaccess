@@ -1,0 +1,35 @@
+ErrorDocument 404 /@/404/
+RewriteEngine On
+
+
+#FORUM
+RewriteRule @/forum/post/([a-z-A-Z0-9\-]+)/com/new index.php?page=forum&post=$1&com=new [L]
+RewriteRule @/forum/post/([a-z-A-Z0-9\-]+)/com/([a-z-A-Z0-9\-]+)/action/up index.php?page=forum&post=$1&com=$2&action=up [L]
+RewriteRule @/forum/post/([a-z-A-Z0-9\-]+) index.php?page=forum&post=$1 [L]
+RewriteRule @/forum/categorie/([a-z-A-Z0-9\-]+)/post/new index.php?page=forum&cat=$1&post=new [L]
+RewriteRule @/forum/categorie/([a-z-A-Z0-9\-]+) index.php?page=forum&cat=$1 [L]
+#FIN
+
+#EVENT
+RewriteRule @/evenement/action/([0-9\-]+) index.php?page=evenement&action=$1 [L]
+#FIN
+
+#ADMIN
+RewriteRule @/administration/token/([a-z-A-Z0-9\-]+)/action/([a-z-A-Z\-]+)/add index.php?page=administration&token=$1&action=$2&add=1 [L]
+RewriteRule @/administration/token/([a-z-A-Z0-9\-]+)/action/([a-z-A-Z\-]+) index.php?page=administration&token=$1&action=$2 [L]
+RewriteRule @/administration/token/([a-z-A-Z0-9\-]+) index.php?page=administration&token=$1 [L]
+
+#FIN
+
+
+#UPLOAD
+RewriteRule @/concours/action/view/([0-9\-]+) index.php?page=concours&action=view&view=$1 [L]
+RewriteRule @/concours/action/([a-z-A-Z0-9\-]+) index.php?page=concours&action=$1 [L]
+
+
+#fin
+
+#PATTERN
+RewriteRule @/([a-z-A-Z0-9\-]+) index.php?page=$1 [L]
+RewriteRule pop/([a-z-A-Z0-9\-]+) index.php?pop=$1 [L]
+#FIN

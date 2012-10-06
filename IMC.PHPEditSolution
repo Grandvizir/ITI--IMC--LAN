@@ -1,0 +1,13 @@
+<Solution version="3.4" name="IMC" xmlns="http://www.waterproof.fr/PHPEdit/Solution">
+  <set:Settings version="3.4" xmlns:set="http://www.waterproof.fr/PHPEdit/Settings">
+    <set:Property key="ProjectFile">
+      <set:Property key="EditionView">
+        <set:Property key="CheckFileModificationOnSave">
+          <set:Property key="HashCheck">
+            <set:Data>False</set:Data>
+          </set:Property>
+        </set:Property>
+      </set:Property>
+    </set:Property>
+  </set:Settings>
+</Solution>
